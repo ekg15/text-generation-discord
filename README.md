@@ -1,25 +1,7 @@
-# Text generation web UI
+# Extremely Basic Discord + LLaMA 30b setup
 
-A gradio web UI for running Large Language Models like GPT-J 6B, OPT, GALACTICA, LLaMA, and Pygmalion.
+## Forked from og/tgw, most credit is due there
 
-Its goal is to become the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) of text generation.
-
-[[Try it on Google Colab]](https://colab.research.google.com/github/oobabooga/AI-Notebooks/blob/main/Colab-TextGen-GPU.ipynb)
-
-|![Image1](https://github.com/oobabooga/screenshots/raw/main/qa.png) | ![Image2](https://github.com/oobabooga/screenshots/raw/main/cai3.png) |
-|:---:|:---:|
-|![Image3](https://github.com/oobabooga/screenshots/raw/main/gpt4chan.png) | ![Image4](https://github.com/oobabooga/screenshots/raw/main/galactica.png) |
-
-## Features
-
-* Switch between different models using a dropdown menu.
-* Notebook mode that resembles OpenAI's playground.
-* Chat mode for conversation and role playing.
-* Generate nice HTML output for GPT-4chan.
-* Generate Markdown output for [GALACTICA](https://github.com/paperswithcode/galai), including LaTeX support.
-* Support for [Pygmalion](https://huggingface.co/models?search=pygmalionai/pygmalion) and custom characters in JSON or TavernAI Character Card formats ([FAQ](https://github.com/oobabooga/text-generation-webui/wiki/Pygmalion-chat-model-FAQ)).
-* Advanced chat features (send images, get audio responses with TTS).
-* Stream the text output in real time.
 * Load parameter presets from text files.
 * Load large models in 8-bit mode (see [here](https://github.com/oobabooga/text-generation-webui/issues/147#issuecomment-1456040134), [here](https://github.com/oobabooga/text-generation-webui/issues/20#issuecomment-1411650652) and [here](https://www.reddit.com/r/PygmalionAI/comments/1115gom/running_pygmalion_6b_with_8gb_of_vram/) if you are on Windows).
 * Split large models across your GPU(s), CPU, and disk.
@@ -59,17 +41,6 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 ```
 conda install pytorch torchvision torchaudio git -c pytorch
 ```
-
-## Installation option 2: one-click installers
-
-[oobabooga-windows.zip](https://github.com/oobabooga/text-generation-webui/releases/download/installers/oobabooga-windows.zip)
-
-[oobabooga-linux.zip](https://github.com/oobabooga/text-generation-webui/releases/download/installers/oobabooga-linux.zip)
-
-Just download the zip above, extract it, and double click on "install". The web UI and all its dependencies will be installed in the same folder.
-
-* To download a model, double click on "download-model"
-* To start the web UI, double click on "start-webui" 
 
 ## Downloading models
 
@@ -184,12 +155,3 @@ These issues are known:
 
 * 8-bit doesn't work properly on Windows or older GPUs.
 * DeepSpeed doesn't work properly on Windows.
-
-For these two, please try commenting on an existing issue instead of creating a new one.
-
-## Credits
-
-- Gradio dropdown menu refresh button: https://github.com/AUTOMATIC1111/stable-diffusion-webui
-- Verbose preset: Anonymous 4chan user.
-- NovelAI and KoboldAI presets: https://github.com/KoboldAI/KoboldAI-Client/wiki/Settings-Presets
-- Pygmalion preset, code for early stopping in chat mode, code for some of the sliders, --chat mode colors: https://github.com/PygmalionAI/gradio-ui/
