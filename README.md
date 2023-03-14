@@ -1,7 +1,16 @@
 # Extremely Basic Discord + LLaMA 30b setup
 
-## Forked from og/tgw, most credit is due there
+### Todo:
+* Add [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) + GPTQ it
+* Add LLaMA 64b int4
+* More params
+* Onnx/tensorRT for faster inference?
+* Conduct custom fine tuning w/ TRL+PEFT/Alpaca stuff
 
+
+### Forked from og/tgw, most credit is due there
+
+### Stuff you can do:
 * Load parameter presets from text files.
 * Load large models in 8-bit mode (see [here](https://github.com/oobabooga/text-generation-webui/issues/147#issuecomment-1456040134), [here](https://github.com/oobabooga/text-generation-webui/issues/20#issuecomment-1411650652) and [here](https://www.reddit.com/r/PygmalionAI/comments/1115gom/running_pygmalion_6b_with_8gb_of_vram/) if you are on Windows).
 * Split large models across your GPU(s), CPU, and disk.
