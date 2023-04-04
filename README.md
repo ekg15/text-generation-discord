@@ -7,6 +7,7 @@
 * Onnx/tensorRT for faster inference?
 * Conduct custom fine tuning w/ TRL+PEFT/Alpaca stuff
 
+optional: `deepspeed --num_gpus=1` and `--deepspeed` and `--nvme-offload-dir`
 ```python letsgo_discord.py --model llama-30b-4bit --load-in-4bit --gpu-memory 22 --cpu-memory 12 --no-stream --verbose```
 
 ### Forked from og/tgw, most credit is due there
